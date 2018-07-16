@@ -34,6 +34,12 @@ export default {
       .then(res => res.data)
       .catch(errHandler);
   },
+  postFavorite(courseId){
+    return service
+      .post(`/users/${courseId}`)
+      .then(res => res.data)
+      .catch(errHandler);
+  },
   
   signup(userInfo) {
     return service

@@ -20,7 +20,10 @@ class CourseDetail extends Component {
         })
       })
   }
-
+handleClick(){
+  api.postFavorite(this.props.match.params.courseId)
+  .then(data => console.log(data))
+}
   render() {                
     return  this.state.course && (
       <div className="CourseDetail">
@@ -31,6 +34,8 @@ class CourseDetail extends Component {
         <p>{this.state.course.link}</p>
         <p>{this.state.course.price}</p>
         <p>{this.state.course.rating}</p>
+        <button onClick={this.handleClick.bind(this)} >Add to favorites</button>
+
       </div>
     );
   }

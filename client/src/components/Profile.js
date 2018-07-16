@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CourseCard from './CourseCard';
 // import { Route, Switch, NavLink, Link } from 'react-router-dom';
 import api from '../api';
 // import './Secret.css';
@@ -14,15 +15,22 @@ class Profile extends Component {
     api.getProfile()
       .then(data => {
         this.setState({
-          profile: data.answerToLifeTheUniverseAndEverything
+          profile: data
         })
       })
   }
   render() {                
     return (
-      <div className="Profile">
+      this.state.profile && <div className="Profile">
         <h2>Profile</h2>
-        {this.state.profile}
+        <p>{this.state.profile.name}</p>
+        <p>{this.state.profile.email}</p>
+        {this.state.profile._favorites.map(element => {
+          return (<div>
+            <CourseCard key={element._id} name={element.courseName} img={element.image} price={element.price} /> 
+              </div>)
+        })}
+
       </div>
     );
   }
