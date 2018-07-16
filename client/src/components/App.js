@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Route, Link, Switch } from 'react-router-dom';
 import Home from './Home';
 import CourseList from './CourseList';
+import CourseDetail from './CourseDetail';
+
 
 import Profile from './Profile';
 import Login from './Login';
@@ -40,6 +42,8 @@ class App extends Component {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/category/:category" exact component={CourseList} />
+          <Route path="/courses/:courseId" exact component={CourseDetail} />
+
           <Route path="/signup" component={Signup} />
           <Route path="/login" component={Login} />
           <Route path="/profile" component={Profile} />

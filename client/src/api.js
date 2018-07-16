@@ -12,9 +12,18 @@ const errHandler = err => {
 export default {
   service: service,
 
-  getCourseList() {
+  getCourseList(searchWord) {
     return service 
-      .get('/courses')
+      .get(`/courses/search/${searchWord}`)
+      .then(res => res.data)
+      .catch(errHandler);
+  },
+
+  
+
+  getCourseDetail(searchId){
+    return service
+      .get(`/courses/${searchId}`)
       .then(res => res.data)
       .catch(errHandler);
   },

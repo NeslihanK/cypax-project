@@ -125,7 +125,7 @@ Platform.deleteMany()
         {
             courseName: "Intro to Python",
             image: "",
-            category: "Python",
+            category: "PYTHON",
             _platform: platforms[0]._id,
             link: "https://de.udacity.com/course/introduction-to-python--ud1110",
             price: 0,
@@ -134,7 +134,7 @@ Platform.deleteMany()
         {
             courseName: "Java Programming Basics",
             image: "",
-            category: "Java",
+            category: "JAVA",
             _platform: platforms[0]._id,
             link: "https://de.udacity.com/course/java-programming-basics--ud282",
             price: 0,
@@ -172,7 +172,7 @@ Platform.deleteMany()
         {
             courseName: "The Complete Python Course | Learn Python by Doing",
             image: "",
-            category: "Python",
+            category: "PYTHON",
             _platform: platforms[1]._id,
             link: "https://www.udemy.com/the-complete-python-course/",
             price: 14.99,
@@ -190,7 +190,7 @@ Platform.deleteMany()
         {
             courseName: "Complete Java Masterclass - updated for Java 10",
             image: "",
-            category: "Java",
+            category: "JAVA",
             _platform: platforms[1]._id,
             link: "https://www.udemy.com/java-the-complete-java-developer-course/",
             price: 14.99,
