@@ -11,24 +11,17 @@ const errHandler = err => {
 
 export default {
   service: service,
-  
-  getCountries() {
-    return service
-      .get('/countries')
-      .then(res => res.data)
-      .catch(errHandler);
-  },
 
-  postCountries(data) {
-    return service
-      .post('/countries', data)
+  getCourseList() {
+    return service 
+      .get('/courses')
       .then(res => res.data)
       .catch(errHandler);
   },
   
-  getSecret() {
+  getProfile() {
     return service
-      .get('/secret')
+      .get('/profile')
       .then(res => res.data)
       .catch(errHandler);
   },

@@ -3,29 +3,29 @@ import React, { Component } from 'react';
 import api from '../api';
 // import './Secret.css';
 
-class Secret extends Component {
+class Profile extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      secret: null
+      profile: null
     }
   }
   componentDidMount(props) {
-    api.getSecret()
+    api.getProfile()
       .then(data => {
         this.setState({
-          secret: data.answerToLifeTheUniverseAndEverything
+          profile: data.answerToLifeTheUniverseAndEverything
         })
       })
   }
   render() {                
     return (
-      <div className="Secret">
-        <h2>Secret</h2>
-        {this.state.secret}
+      <div className="Profile">
+        <h2>Profile</h2>
+        {this.state.profile}
       </div>
     );
   }
 }
 
-export default Secret;
+export default Profile;

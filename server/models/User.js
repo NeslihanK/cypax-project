@@ -4,8 +4,7 @@ const { Schema } = mongoose;
 
 const userSchema = new Schema({
   name: {type: String},
-
-   _favorites: [{type: Schema.Types.ObjectId, ref:'Course'}],
+  _favorites: [{type: Schema.Types.ObjectId, ref:'Course'}],
 });
 
 // Add "email" (instead of "username"), "hash" and "salt" field to store the email (as username), the hashed password and the salt value

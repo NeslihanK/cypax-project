@@ -13,7 +13,7 @@ const Course = require("../models/Course")
 // Route to get all course
 router.get('/search/:courseSearch', (req, res, next) => {
     let courseCategory = req.params.courseSearch
-  Course.find({category: courseCategory})
+    Course.find({category: courseCategory})
     .then(data => {
       res.json(data)
     })
