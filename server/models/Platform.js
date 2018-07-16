@@ -5,7 +5,7 @@ const platformSchema = new Schema({
   platformName: { type: String, required: true},
   link: { type: String, required: true },
   image: { type: String},
-//   courses: [{type: Schema.Types.ObjectId, ref:'Course'}]
+  //courses: [{type: Schema.Types.ObjectId, ref:'Course'}]
 });
 
 

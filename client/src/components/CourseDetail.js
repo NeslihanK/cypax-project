@@ -7,27 +7,27 @@ class CourseDetail extends Component {
   constructor(props) {
     super(props)
     this.state = {
-        course: {}
+        course: null
     }
     
     
   }
   componentDidMount() {
     api.getCourseDetail(this.props.match.params.courseId)
-    .then(courseDetail => {
+    .then(course => {
         this.setState({
-          course: courseDetail
+          course
         })
       })
   }
 
   render() {                
-    return (
+    return  this.state.course && (
       <div className="CourseDetail">
         <p>{this.state.course.courseName}</p>
         <p>{this.state.course.image}</p>
         <p>{this.state.course.category}</p>
-        <p>{this.state.course._platform}</p>
+        <p>platform: {this.state.course._platform.platformName}</p>
         <p>{this.state.course.link}</p>
         <p>{this.state.course.price}</p>
         <p>{this.state.course.rating}</p>

@@ -25,7 +25,7 @@ router.get('/:courseId' , (req, res, next) => {
     Course.findById(courseId)
     .populate('_platform')
     .then(data => {
-      // console.log('data',data)
+      console.log('data: ',data)
       res.json(data)
     })
     .catch (err => next(err))
