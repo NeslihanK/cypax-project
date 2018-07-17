@@ -22,11 +22,20 @@ router.post('/:courseId',passport.authenticate("jwt", config.jwtSession), (req, 
   let courseId = req.params.courseId;
   User.findByIdAndUpdate(userId, {$addToSet: {_favorites: courseId}}, {new: true})
   .then(user => {
-    return res.json({user})
+    return res.json(user)
   })
-  
-
 });
+
+router.get('/:courseId',passport.authenticate("jwt", config.jwtSession), (req, res, next) => {
+  let userId=req.user.id;
+  let courseId = req.params.courseId;
+  User.findByIdAndUpdate(userId, {$pull: {_favorites: courseId}}, {new:true})
+  .populate('_favorites')
+  .then(user => {
+    return res.json(user)
+  })
+});
+
 
 router.post('/first-user/pictures', parser.single('picture'), (req, res, next) => {
   console.log('DEBUG req.file', req.file);
