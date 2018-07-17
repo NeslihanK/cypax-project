@@ -108,7 +108,7 @@ Platform.deleteMany()
 .then((platforms) => {
 
     console.log(platforms.length + " platforms created");
-    
+
     const courses = [
          // Udacity Courses
         {
@@ -417,7 +417,6 @@ Platform.deleteMany()
     .catch(err => console.log(err))
 })
 .catch(err => console.log(err))
-mongoose.connection.close()
 
 
 
