@@ -10,7 +10,7 @@ const passport = require('passport');
 const { Strategy, ExtractJwt } = require("passport-jwt");
 
 const config = require("./configs/index");
-var User = require('./models/user');
+var User = require('./models/User');
 require('./models/Platform');
 require('./models/Course');
 var authRoutes = require('./routes/auth');
