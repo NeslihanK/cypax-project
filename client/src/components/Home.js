@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 
-
 class Home extends Component {
-  // constructor(props) {
-  //   super(props)
-  //   this.state = {
-  //   }
-  // }
-  render() {                
+  constructor(props) {
+    super(props)
+  }
+
+  render() { 
+           
     return (
       <div className="Home">
         <Link to="/category/JS">JS</Link> <br/>

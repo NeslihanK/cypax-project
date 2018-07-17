@@ -15,9 +15,10 @@ class CourseCard extends Component {
   render() {                
     return (
       <div className="CourseCard">
-     <p>{this.props.name}</p>
-     <p>{this.props.img}</p>
-     <p>{this.props.price}</p>
+       <p>{this.props.name}</p>
+       <p>{this.props.img}</p>
+       <p>{this.props.price}</p>
+       <p>{this.props.link}</p>
         
       </div>
     );

@@ -24,6 +24,8 @@ router.post('/:courseId',passport.authenticate("jwt", config.jwtSession), (req, 
   .then(user => {
     return res.json({user})
   })
+  
+
 });
 
 router.post('/first-user/pictures', parser.single('picture'), (req, res, next) => {

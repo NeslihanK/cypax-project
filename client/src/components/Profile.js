@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import CourseCard from './CourseCard';
-// import { Route, Switch, NavLink, Link } from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 import api from '../api';
 // import './Secret.css';
 
@@ -19,17 +19,20 @@ class Profile extends Component {
         })
       })
   }
-  render() {                
+  render() { 
+    console.log(this.state.profile)               
     return (
       this.state.profile && <div className="Profile">
         <h2>Profile</h2>
+        <h3>Hello {this.state.profile.name} lern something awesome!!! </h3>
         <p>{this.state.profile.name}</p>
         <p>{this.state.profile.email}</p>
         {this.state.profile._favorites.map(element => {
           return (<div>
-            <CourseCard key={element._id} name={element.courseName} img={element.image} price={element.price} /> 
-              </div>)
+            <CourseCard key={element._id} name={element.courseName} img={element.image} price={element.price} link={element.link}/> 
+            </div>)
         })}
+        
 
       </div>
     );

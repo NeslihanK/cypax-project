@@ -7,7 +7,7 @@ const courseSchema = new Schema({
   category: { type: String, enum: ['JS', 'CSS', 'PYTHON', 'JAVA', 'PHP', 'C++']},
   _platform: { type: Schema.Types.ObjectId, ref: 'Platform'},
   link: { type: String, required: true },
-  price: { type: Number},
+  price: { type: String},
   rating: { type: Array},
 });
 

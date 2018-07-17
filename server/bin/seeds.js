@@ -93,7 +93,13 @@ const platforms = [
         platformName: "Google Education",
         link: "https://developers.google.com/edu/",
         image: "https://www.leedscitycollege.ac.uk/media/3623/google-for-education-logo.jpg?width=390&height=207",
-    }
+    },
+    {
+        platformName: "OpenClassrooms",
+        link: "https://openclassrooms.com/en/",
+        image: "https://pbs.twimg.com/profile_images/979726623657381889/ugnnQqXa_400x400.jpg",
+    },
+
 ]
 
 Platform.deleteMany()
@@ -110,7 +116,7 @@ Platform.deleteMany()
             category: "JS",
             _platform: platforms[0]._id,
             link: "https://de.udacity.com/course/intro-to-javascript--ud803",
-            price: 0,
+            price: "free",
             rating: "6",
         },
         {
@@ -119,7 +125,7 @@ Platform.deleteMany()
             category: "CSS",
             _platform: platforms[0]._id,
             link: "https://de.udacity.com/course/intro-to-html-and-css--ud304",
-            price: 0,
+            price: "free",
             rating: "6",
         },
         {
@@ -128,7 +134,7 @@ Platform.deleteMany()
             category: "PYTHON",
             _platform: platforms[0]._id,
             link: "https://de.udacity.com/course/introduction-to-python--ud1110",
-            price: 0,
+            price: "free",
             rating: "6",
         },
         {
@@ -137,7 +143,7 @@ Platform.deleteMany()
             category: "JAVA",
             _platform: platforms[0]._id,
             link: "https://de.udacity.com/course/java-programming-basics--ud282",
-            price: 0,
+            price: "free",
             rating: "6",
         },
         {
@@ -146,7 +152,7 @@ Platform.deleteMany()
             category: "C++",
             _platform: platforms[0]._id,
             link: "https://de.udacity.com/course/c-for-programmers--ud210",
-            price: 0,
+            price: "free",
             rating: "6",
         },
 
@@ -157,7 +163,7 @@ Platform.deleteMany()
             category: "JS",
             _platform: platforms[1]._id,
             link: "https://www.udemy.com/learn-javascript-fundamentals/",
-            price: 14.99,
+            price: "with fee",
             rating: "10",
         },
         {
@@ -166,7 +172,7 @@ Platform.deleteMany()
             category: "CSS",
             _platform: platforms[1]._id,
             link: "https://www.udemy.com/css-the-complete-guide-incl-flexbox-grid-sass/",
-            price: 14.99,
+            price: "with fee",
             rating: "10",
         },
         {
@@ -175,7 +181,7 @@ Platform.deleteMany()
             category: "PYTHON",
             _platform: platforms[1]._id,
             link: "https://www.udemy.com/the-complete-python-course/",
-            price: 14.99,
+            price: "with fee",
             rating: "10",
         },
         {
@@ -184,7 +190,7 @@ Platform.deleteMany()
             category: "PHP",
             _platform: platforms[1]._id,
             link: "https://www.udemy.com/php-for-beginners-/",
-            price: 14.99,
+            price: "with fee",
             rating: "10",
         },
         {
@@ -193,7 +199,7 @@ Platform.deleteMany()
             category: "JAVA",
             _platform: platforms[1]._id,
             link: "https://www.udemy.com/java-the-complete-java-developer-course/",
-            price: 14.99,
+            price: "with fee",
             rating: "10",
         },
         {
@@ -202,7 +208,7 @@ Platform.deleteMany()
             category: "C++",
             _platform: platforms[1]._id,
             link: "https://www.udemy.com/video-course-c-from-beginner-to-expert/",
-            price: 14.99,
+            price: "with fee",
             rating: "10",
         },
 
@@ -213,7 +219,7 @@ Platform.deleteMany()
             category: "JS",
             _platform: platforms[2]._id,
             link: "https://www.khanacademy.org/computing/computer-programming/programming",
-            price: 0,
+            price: "free",
             rating: "10",
         },
         {
@@ -222,7 +228,7 @@ Platform.deleteMany()
             category: "CSS",
             _platform: platforms[2]._id,
             link: "https://www.khanacademy.org/computing/computer-programming/html-css",
-            price: 0,
+            price: "free",
             rating: "10",
         },
 
@@ -233,7 +239,7 @@ Platform.deleteMany()
             category: "JS",
             _platform: platforms[3]._id,
             link: "https://scrimba.com/g/gintrotojavascript",
-            price: 0,
+            price: "free",
             rating: "10",
         },
         {
@@ -242,7 +248,7 @@ Platform.deleteMany()
             category: "CSS",
             _platform: platforms[3]._id,
             link: "https://scrimba.com/g/gintrotocss",
-            price: 0,
+            price: "free",
             rating: "10",
         },
         
@@ -253,7 +259,7 @@ Platform.deleteMany()
             category: "JS",
             _platform: platforms[4]._id,
             link: "https://www.codecademy.com/catalog/language/javascript",
-            price: 0,
+            price: "free",
             rating: "10",
         },
         {
@@ -262,7 +268,7 @@ Platform.deleteMany()
             category: "CSS",
             _platform: platforms[4]._id,
             link: "https://www.codecademy.com/catalog/language/html-css",
-            price: 0,
+            price: "free",
             rating: "10",
         },
         {
@@ -271,7 +277,7 @@ Platform.deleteMany()
             category: "PYTHON",
             _platform: platforms[4]._id,
             link: "https://www.codecademy.com/catalog/language/python",
-            price: 0,
+            price: "free",
             rating: "10",
         },
         {
@@ -280,7 +286,7 @@ Platform.deleteMany()
             category: "JAVA",
             _platform: platforms[4]._id,
             link: "https://www.codecademy.com/catalog/language/java",
-            price: 0,
+            price: "free",
             rating: "10",
         },
 
@@ -302,7 +308,7 @@ Platform.deleteMany()
             category: "JS",
             _platform: platforms[6]._id,
             link: "https://www.edx.org/course/javascript-introduction-w3cx-js-0x-0",
-            price: 99.00,
+            price: "with fee",
             rating: "10",
         },
         {
@@ -311,7 +317,7 @@ Platform.deleteMany()
             category: "CSS",
             _platform: platforms[6]._id,
             link: "https://www.edx.org/course/html5-and-css-fundamentals",
-            price: 99.00,
+            price: "with fee",
             rating: "10",
         },
         {
@@ -320,7 +326,7 @@ Platform.deleteMany()
             category: "PYTHON",
             _platform: platforms[6]._id,
             link: "https://www.edx.org/course/introduction-to-python-absolute-beginner-0",
-            price: 99.00,
+            price: "with fee",
             rating: "10",
         },
         {
@@ -329,7 +335,7 @@ Platform.deleteMany()
             category: "JAVA",
             _platform: platforms[6]._id,
             link: "https://www.edx.org/course/learn-to-program-in-java-0",
-            price: 99.00,
+            price: "with fee",
             rating: "10",
         },
         {
@@ -338,7 +344,7 @@ Platform.deleteMany()
             category: "C++",
             _platform: platforms[6]._id,
             link: "https://www.edx.org/course/introduction-to-c-0",
-            price: 99.00,
+            price: "with fee",
             rating: "10",
         },
 
@@ -349,7 +355,7 @@ Platform.deleteMany()
             category: "JS",
             _platform: platforms[7]._id,
             link: "https://www.lynda.com/JavaScript-tutorials/Introducing-JavaScript-Language/123563-2.html",
-            price: 0,
+            price: "with fee",
             rating: "10",
         },
         {
@@ -358,7 +364,7 @@ Platform.deleteMany()
             category: "CSS",
             _platform: platforms[7]._id,
             link: "https://www.lynda.com/CSS-tutorials/CSS-Fundamentals/417645-2.html?srchtrk=index%3a22%0alinktypeid%3a2%0aq%3aCSS%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2",
-            price: 0,
+            price: "with fee",
             rating: "10",
         },
         {
@@ -367,7 +373,7 @@ Platform.deleteMany()
             category: "PYTHON",
             _platform: platforms[7]._id,
             link: "https://www.lynda.com/Python-tutorials/Learning-Python/661773-2.html?srchtrk=index%3a1%0alinktypeid%3a2%0aq%3aPython%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2",
-            price: 0,
+            price: "with fee",
             rating: "10",
         },
         {
@@ -376,7 +382,7 @@ Platform.deleteMany()
             category: "PHP",
             _platform: platforms[7]._id,
             link: "https://www.lynda.com/PHP-tutorials/Introducing-PHP/418256-2.html?srchtrk=index%3a4%0alinktypeid%3a2%0aq%3aPHP%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2",
-            price: 0,
+            price: "with fee",
             rating: "10",
         },
         {
@@ -385,7 +391,7 @@ Platform.deleteMany()
             category: "JAVA",
             _platform: platforms[7]._id,
             link: "https://www.lynda.com/Java-tutorials/Learning-Java-2018/669544-2.html?srchtrk=index%3a1%0alinktypeid%3a2%0aq%3aJava%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2",
-            price: 0,
+            price: "with fee",
             rating: "10",
         },
         {
@@ -394,7 +400,7 @@ Platform.deleteMany()
             category: "C++",
             _platform: platforms[7]._id,
             link: "https://www.lynda.com/C-tutorials/Up-Running-C/167922-2.html?srchtrk=index%3a5%0alinktypeid%3a2%0aq%3ac%2b%2b%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2",
-            price: 0,
+            price: "with fee",
             rating: "10",
         },
 

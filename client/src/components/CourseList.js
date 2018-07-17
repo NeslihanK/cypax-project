@@ -8,23 +8,37 @@ class CourseList extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      courses: []
+      courses: [],
+      search: " "
     }
-    
   }
+
+  updateSearch(event) {
+    this.setState({search: event.target.value})
+  }
+
   componentDidMount() {
     api.getCourseList(this.props.match.params.category)
       .then(courseList => {
         this.setState({
-          courses: courseList
+          courses: courseList,
         })
       })
+    
   }
 
-  render() {                
+  render() {    
+
+
     return (
+
       <div className="CourseList">
-        {this.state.courses.map((element, index) => {
+        <input  type="text" maxLength="40"
+        
+          value = {this.state.search} 
+          onChange = {this.updateSearch.bind(this)} /> <br/>
+          <br/>
+          {this.state.courses.filter(e => {return e.courseName.toLowerCase().includes(this.state.search.toLowerCase())}).map((element, index) => {
           return (
             <Link to={`/courses/${element._id}`}><CourseCard key={element._id} name={element.courseName} img={element.image} price={element.price} /> </Link>
           )
