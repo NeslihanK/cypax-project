@@ -3,13 +3,19 @@ import { Route, Link, Switch } from 'react-router-dom';
 import Home from './Home';
 import CourseList from './CourseList';
 import CourseDetail from './CourseDetail';
-
-
 import Profile from './Profile';
 import Login from './Login';
 import Signup from './Signup';
 import api from '../api';
-import logo from '../logo.svg';
+
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink} from 'reactstrap';
 
 import './App.css';
 
@@ -17,10 +23,16 @@ import './App.css';
 class App extends Component {
   constructor(props) {
     super(props)
+    this.toggle = this.toggle.bind(this);
     this.state = {
-
+      isOpen: false
     }
     api.loadUser();
+  }
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
   }
 
   handleLogoutClick(e) {
@@ -30,16 +42,29 @@ class App extends Component {
   render() {                
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React Countries</h1>
-          <Link to="/">Home</Link> 
-          {!api.isLoggedIn() && <Link to="/signup">Signup</Link> }
-          {!api.isLoggedIn() && <Link to="/login">Login</Link> }
-          {api.isLoggedIn() && <Link to="/" onClick={(e) => this.handleLogoutClick(e)}>Logout</Link> }
-          <Link to="/profile">Profile</Link> 
-        </header>
+      <Navbar color="light" light expand="md">
+          {/* <NavbarBrand href="/">reactstrap</NavbarBrand> */}
+          <NavbarBrand><Link to="/">Home</Link></NavbarBrand>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className="ml-auto" navbar>
+              <NavItem>
+              <NavLink>{!api.isLoggedIn() && <Link to="/signup">Signup</Link> }</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink>{!api.isLoggedIn() && <Link to="/login">Login</Link> }</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink>{api.isLoggedIn() && <Link to="/" onClick={(e) => this.handleLogoutClick(e)}>Logout</Link> }</NavLink>
+              </NavItem> <NavItem>
+                <NavLink>{api.isLoggedIn() && <Link to="/profile">Profile</Link>}</NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
+        
         <Switch>
+
           <Route path="/" exact component={Home} />
           <Route path="/category/:category" exact component={CourseList} />
           <Route path="/courses/:courseId" exact component={CourseDetail} />
@@ -48,10 +73,14 @@ class App extends Component {
           <Route path="/login" component={Login} />
           <Route path="/profile" component={Profile} />
           <Route render={() => <h2>404</h2>} />
-        </Switch>        
+        </Switch>   
+        
       </div>
     );
   }
 }
+
+
+
 
 export default App;

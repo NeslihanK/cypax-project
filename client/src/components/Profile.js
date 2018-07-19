@@ -39,11 +39,13 @@ class Profile extends Component {
         <p>{this.state.profile.name}</p>
         <p>{this.state.profile.email}</p>
         {this.state.profile._favorites.map(element => {
-          return (<div>
+          return (
+            <div>
             <CourseCard key={element._id} name={element.courseName} img={element.image} price={element.price} link={element.link}/> 
             <button onClick={() => {this.handleClick(element._id)}} >Delete</button>
 
-            </div>)
+            </div>
+            )
         })}
         
 

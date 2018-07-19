@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import api from '../api';
 
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+
+
 class Login extends Component {
   constructor(props) {
     super(props)
@@ -32,14 +35,30 @@ class Login extends Component {
   render() {   
     return (
       <div className="Login">
-        <h2>Login</h2>
-        <form>
-          Email: <input type="text" value={this.state.email} onChange={(e) => {this.handleInputChange("email", e)}} /> <br/>
-          Password: <input type="password" value={this.state.password} onChange={(e) => {this.handleInputChange("password", e)}}  /> <br/>
-          <button onClick={(e) => this.handleClick(e)}>Login</button>
-        </form>
+      <Form>
+
+         <h2>Login</h2> 
+        <FormGroup>
+          <Label for="exampleEmail">Email</Label>
+          <Input type="email" value={this.state.email} onChange={(e) => {this.handleInputChange("email", e)}} name="email" id="exampleEmail" placeholder="with a placeholder" />
+        </FormGroup>
+        <FormGroup>
+          <Label for="examplePassword">Password</Label>
+          <Input type="password" value={this.state.password} onChange={(e) => {this.handleInputChange("password", e)}} name="password" id="examplePassword" placeholder="password placeholder" />
+        </FormGroup>
+       
+        <FormGroup check>
+          <Label check>
+            <Input type="checkbox" />{' '}
+            Check me out
+          </Label>
+        </FormGroup>
+        <br/>
+        <Button onClick={(e) => this.handleClick(e)}>Submit</Button>
+      </Form>
+     
       </div>
-    );
+     );
   }
 }
 
