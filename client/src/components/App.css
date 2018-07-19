@@ -86,6 +86,10 @@ a:hover {
   /* justify-content: center */
 }
 
+.Home > .col {
+  margin: 10px 20px; 
+}
+
 .Profile > .container {
   height: 50vh
 }
