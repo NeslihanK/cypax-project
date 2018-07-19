@@ -30,10 +30,17 @@ handleClick(){
 }
   render() {                
     return  this.state.course && (
+
       <div className="CourseDetails">
+        <br/>
+          <Link to={`/category/${this.state.course.category}`}>
+          <button className="btn btn-primary">Back to List</button>
+          </Link>
+          {api.isLoggedIn() && <button className="btn btn-primary" onClick={this.handleClick.bind(this)} >Add to favorites</button>}
+
           <div className="container">
             <div className="row">
-     <div className="mx-auto">
+      <div className="mx-auto">
       <Card>
         <CardImg src={this.state.course.image} />
         <CardBody>
@@ -41,7 +48,7 @@ handleClick(){
           <CardSubtitle>{this.state.course.category}</CardSubtitle>
           <CardText>platform: {this.state.course._platform.platformName}</CardText>
           <CardText>price: {this.state.course.price}</CardText>
-          <CardText>rating: {this.state.course.rating}</CardText>
+          {/* <CardText>rating: {this.state.course.rating}</CardText> */}
           <Button><CardLink href={this.state.course.link} target="_blank" >Link</CardLink></Button>
 
         </CardBody>
@@ -52,10 +59,10 @@ handleClick(){
       </div>
         
       
-        <Link to={`/category/${this.state.course.category}`}>
+        {/* <Link to={`/category/${this.state.course.category}`}>
           <button className="btn btn-primary">Back to List</button>
-        </Link>
-        {api.isLoggedIn() && <button className="btn btn-primary" onClick={this.handleClick.bind(this)} >Add to favorites</button>}
+        </Link> */}
+        {/* {api.isLoggedIn() && <button className="btn btn-primary" onClick={this.handleClick.bind(this)} >Add to favorites</button>} */}
        
       <br/>
       <br/>

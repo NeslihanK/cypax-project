@@ -41,9 +41,9 @@ class Profile extends Component {
             <div className="row" >
               <Card className= "mx-auto">
                 <CardBody>
-                  <CardTitle><h1>Hello {this.state.profile.name} learn something awesome!!! </h1></CardTitle>
-                  <CardText>Username: {this.state.profile.name}</CardText>
-                  <CardText>Email: {this.state.profile.email}</CardText>
+                  <CardTitle><h1>Hello {this.state.profile.name} learn something awesome!!! </h1></CardTitle> <br/>
+                  <CardText><h4>Username: {this.state.profile.name}</h4></CardText> <br/>
+                  <CardText><h4>Email: {this.state.profile.email}</h4></CardText> <br/>
                 </CardBody>
               </Card>
             </div>
@@ -66,7 +66,7 @@ class Profile extends Component {
 
                   <CardTitle>Coursename: {element.courseName}</CardTitle>                 
                    <CardImg  src={element.image}/>
-                 
+                
                   <CardText>Price: {element.price}</CardText>
                   <button className="btn btn-secondary"><CardLink href={element.link} target="_blank" >Link</CardLink></button>
 

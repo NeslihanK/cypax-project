@@ -118,7 +118,7 @@ Platform.deleteMany()
          // Udacity Courses
         {
             courseName: "Intro to Javascript",
-            image: "https://secure.meetupstatic.com/photos/event/8/0/0/8/600_472052776.jpeg",
+            image: "https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/2017/10/udacity-logo.png",
             category: "JS",
             _platform: platforms[0]._id,
             link: "https://de.udacity.com/course/intro-to-javascript--ud803",
@@ -127,7 +127,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Intro to HTML & CSS",
-            image: "",
+            image: "https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/2017/10/udacity-logo.png",
             category: "CSS",
             _platform: platforms[0]._id,
             link: "https://de.udacity.com/course/intro-to-html-and-css--ud304",
@@ -136,7 +136,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Intro to Python",
-            image: "",
+            image: "https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/2017/10/udacity-logo.png",
             category: "PYTHON",
             _platform: platforms[0]._id,
             link: "https://de.udacity.com/course/introduction-to-python--ud1110",

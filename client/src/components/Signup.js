@@ -40,19 +40,26 @@ class Signup extends Component {
   render() {   
     return (
       <div className="Signup">
+
+        <div className="Banner">
+
+        <img src="../../images/Shutter1.png" width="100%"/> <br/>
+        </div>
+      <br/>
         <h2>Signup</h2>
+        <br/>
         <Form>
         <FormGroup>
-          <Label for="exampleEmail">Email</Label>
-          <Input type="email" value={this.state.email} onChange={(e) => {this.handleInputChange("email", e)}} name="email" id="exampleEmail" placeholder="Email placeholder" />
+          <Label for="exampleEmail"><h5>Email</h5></Label>
+          <Input className="mx-auto" type="email" value={this.state.email} onChange={(e) => {this.handleInputChange("email", e)}} name="email" id="exampleEmail" placeholder="Email placeholder" />
         </FormGroup>
         <FormGroup>
-          <Label for="exampleName">Name</Label>
-          <Input type="text" value={this.state.name} onChange={(e) => {this.handleInputChange("name", e)}} name="name" id="exampleName" placeholder="Name placeholder" />
+          <Label for="exampleName"><h5>Name</h5></Label>
+          <Input className="mx-auto" type="text" value={this.state.name} onChange={(e) => {this.handleInputChange("name", e)}} name="name" id="exampleName" placeholder="Name placeholder" />
         </FormGroup>
         <FormGroup>
-          <Label for="examplePassword">Password</Label>
-          <Input type="password" value={this.state.password} onChange={(e) => {this.handleInputChange("password", e)}} name="password" id="examplePassword" placeholder="Password placeholder" />
+          <Label for="examplePassword"><h5>Password</h5></Label>
+          <Input className="mx-auto" type="password" value={this.state.password} onChange={(e) => {this.handleInputChange("password", e)}} name="password" id="examplePassword" placeholder="Password placeholder" />
         </FormGroup>
        
          <br/>

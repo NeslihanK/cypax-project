@@ -11,10 +11,18 @@ class Home extends Component {
            
     return (
       
+
  
    
 
       <div className="Home">
+
+        
+        <div className="Banner">
+
+        <img src="../../images/Shutter1.png" width="100%" heigt="" /> <br/>
+        </div>
+
         <div className="col">
 
         <Link to="/category/JS"><img src="../../images/JS.png" className="img-category"/></Link> <br/>

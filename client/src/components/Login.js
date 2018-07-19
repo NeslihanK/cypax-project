@@ -35,16 +35,23 @@ class Login extends Component {
   render() {   
     return (
       <div className="Login">
+
+        <div className="Banner">
+
+        <img src="../../images/Shutter1.png" width="100%" heigt="" /> <br/>
+        </div>
       <Form>
+         <br/>
 
          <h2>Login</h2> 
+         <br/>
         <FormGroup>
-          <Label for="exampleEmail">Email</Label>
-          <Input className="mx-auto" type="email" value={this.state.email} onChange={(e) => {this.handleInputChange("email", e)}} name="email" id="exampleEmail" placeholder="with a placeholder" />
+          <Label for="exampleEmail"><h5>Email</h5></Label>
+          <Input className="mx-auto" type="email" value={this.state.email} onChange={(e) => {this.handleInputChange("email", e)}} name="email" id="exampleEmail" placeholder="Email placeholder" />
         </FormGroup>
         <FormGroup>
-          <Label for="examplePassword">Password</Label>
-          <Input className="mx-auto" type="password" value={this.state.password} onChange={(e) => {this.handleInputChange("password", e)}} name="password" id="examplePassword" placeholder="password placeholder" />
+          <Label for="examplePassword"><h5>Password</h5></Label>
+          <Input className="mx-auto" type="password" value={this.state.password} onChange={(e) => {this.handleInputChange("password", e)}} name="password" id="examplePassword" placeholder="Password placeholder" />
         </FormGroup>
        
      

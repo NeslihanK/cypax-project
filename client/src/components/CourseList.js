@@ -30,24 +30,18 @@ class CourseList extends Component {
   }
 
   render() {    
-
-
     return (
-
       <div className="CourseList">
-        <input  type="text" maxLength="40" placeholder="Whatever you want..." className="form-control mx-auto" value = {this.state.search} onChange = {this.updateSearch.bind(this)} /> <br/>
+          <br/>
+        <Link to={`/`}>
+            <button className="btn btn-primary">Back to Languages</button>
+        </Link> 
+        <input type="text" maxLength="40" className="form-control mx-auto" value = {this.state.search} onChange = {this.updateSearch.bind(this)} /><br/>
           <div className="container">
             <div className="row">
-
-
           <br/>
-          {this.state.courses.filter(e => {return e.courseName.toLowerCase().includes(this.state.search.toLowerCase())}).map((element, index) => {
-        
-         
-          
+          {this.state.courses.filter(e => {return e.courseName.toLowerCase().includes(this.state.search.toLowerCase())}).map((element, index) => {    
           return (
-                 
-
               <div className="col-3" >
                 <Link to={`/courses/${element._id}`}>
                   <Card>
@@ -71,10 +65,6 @@ class CourseList extends Component {
 
           )
         })}
-        
-                <Link to={`/`}>
-                <button className="btn btn-primary">Back to Languages</button>
-                </Link>
                 <br/>
                 <br/>
                 <br/>

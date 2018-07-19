@@ -44,7 +44,7 @@ class App extends Component {
       <div className="App">
       <Navbar color="light" light expand="md">
           {/* <NavbarBrand href="/">reactstrap</NavbarBrand> */}
-          <NavbarBrand><Link to="/">Home</Link></NavbarBrand>
+          <NavbarBrand><Link to="/">CypaX</Link></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
