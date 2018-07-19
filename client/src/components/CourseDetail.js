@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import api from '../api';
-// import { Route, Switch, NavLink, Link } from 'react-router-dom';
+
+import { Link } from 'react-router-dom';
+
 // import './Secret.css';
 
 class CourseDetail extends Component {
@@ -34,6 +36,9 @@ handleClick(){
         <p>{this.state.course.link}</p>
         <p>{this.state.course.price}</p>
         <p>{this.state.course.rating}</p>
+        <Link to={`/category/${this.state.course.category}`}>
+          <button>Back to List</button>
+        </Link>
         <button onClick={this.handleClick.bind(this)} >Add to favorites</button>
 
       </div>

@@ -118,7 +118,7 @@ Platform.deleteMany()
          // Udacity Courses
         {
             courseName: "Intro to Javascript",
-            image: "",
+            image: "https://secure.meetupstatic.com/photos/event/8/0/0/8/600_472052776.jpeg",
             category: "JS",
             _platform: platforms[0]._id,
             link: "https://de.udacity.com/course/intro-to-javascript--ud803",
@@ -250,7 +250,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Introduction to CSS",
-            image: "",
+            image: "aaaa",
             category: "CSS",
             _platform: platforms[3]._id,
             link: "https://scrimba.com/g/gintrotocss",

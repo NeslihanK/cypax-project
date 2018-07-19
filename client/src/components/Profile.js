@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import CourseCard from './CourseCard';
 // import {Link} from 'react-router-dom';
 import api from '../api';
+import { CardImg, CardLink, Button, Card, CardText, CardBody,
+  CardTitle } from 'reactstrap';
 import { log } from 'util';
 // import './Secret.css';
 
@@ -34,21 +36,40 @@ class Profile extends Component {
     console.log("new state ", this.state.profile)
     return (
       this.state.profile && <div className="Profile">
-        <h2>Profile</h2>
-        <h3>Hello {this.state.profile.name} lern something awesome!!! </h3>
-        <p>{this.state.profile.name}</p>
-        <p>{this.state.profile.email}</p>
+
+        <Card>
+          <CardBody>
+            <CardTitle><h1>Hello {this.state.profile.name} learn something awesome!!! </h1></CardTitle>
+            <CardText>Username: {this.state.profile.name}</CardText>
+            <CardText>Email: {this.state.profile.email}</CardText>
+          </CardBody>
+        </Card>
+
+
+
         {this.state.profile._favorites.map(element => {
+          console.log(element)
           return (
             <div>
-            <CourseCard key={element._id} name={element.courseName} img={element.image} price={element.price} link={element.link}/> 
-            <button onClick={() => {this.handleClick(element._id)}} >Delete</button>
+
+             <Card>
+               <CardBody>
+                  <CourseCard key={element._id}/>
+
+                  <CardTitle>Coursename: {element.courseName}</CardTitle>                 
+                   <CardImg src={element.image}/>
+                 
+                  <CardText>Price: {element.price}</CardText>
+                  <Button><CardLink href={element.link} target="_blank" >Link</CardLink></Button>
+
+                  <Button onClick={() => {this.handleClick(element._id)}} >Delete</Button>
+               </CardBody>
+             </Card>
 
             </div>
             )
         })}
-        
-
+      
       </div>
     );
   }

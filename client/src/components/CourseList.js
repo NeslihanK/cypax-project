@@ -43,6 +43,9 @@ class CourseList extends Component {
             <Link to={`/courses/${element._id}`}><CourseCard key={element._id} name={element.courseName} img={element.image} price={element.price} /> </Link>
           )
         })}
+        <Link to={`/`}>
+          <button>Back to Languages</button>
+        </Link>
         
       </div>);
   }
