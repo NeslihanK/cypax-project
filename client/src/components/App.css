@@ -32,3 +32,67 @@
   to { transform: rotate(360deg); }
 }
 
+.card {
+  margin-top: 4rem;
+  height: 16rem
+}
+
+.form-control {
+  margin-top: 2rem;
+  width: 50% !important;
+  border-radius: 25px !important;
+  height: 3rem
+}
+
+.CourseList{
+  background-image: radial-gradient( circle 592px at 48.2% 50%,  rgba(255,255,249,0.6) 0%, rgba(160,199,254,1) 74.6% );
+  padding-top: 1px;
+  height: 230vh
+}
+
+.CourseDetails {
+  background-image: radial-gradient( circle 592px at 48.2% 50%,  rgba(255,255,249,0.6) 0%, rgba(160,199,254,1) 74.6% );
+  width: 100%;
+  height: 100%;
+
+}
+
+.Profile{
+  background-image: radial-gradient( circle 592px at 48.2% 50%,  rgba(255,255,249,0.6) 0%, rgba(160,199,254,1) 74.6% );
+  width: 100%;
+  height: 100%;
+}
+
+a:hover {
+  text-decoration: none !important
+}
+
+.container {
+  height: 90vh;
+}
+
+.img-category {
+  border: 1px solid red;
+  max-height: 200px;
+  width: auto
+}
+
+.Home {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center
+}
+
+.Profile > .container {
+  height: 50vh
+}
+
+.Signup {
+  background-image: radial-gradient( circle 592px at 48.2% 50%,  rgba(255,255,249,0.6) 0%, rgba(160,199,254,1) 74.6% );
+  height: 95vh
+ }
+
+ .Login {
+  background-image: radial-gradient( circle 592px at 48.2% 50%,  rgba(255,255,249,0.6) 0%, rgba(160,199,254,1) 74.6% );
+  height: 95vh
+ }

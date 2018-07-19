@@ -44,22 +44,17 @@ class Signup extends Component {
         <Form>
         <FormGroup>
           <Label for="exampleEmail">Email</Label>
-          <Input type="email" value={this.state.email} onChange={(e) => {this.handleInputChange("email", e)}} name="email" id="exampleEmail" placeholder="with a placeholder" />
+          <Input type="email" value={this.state.email} onChange={(e) => {this.handleInputChange("email", e)}} name="email" id="exampleEmail" placeholder="Email placeholder" />
         </FormGroup>
         <FormGroup>
           <Label for="exampleName">Name</Label>
-          <Input type="text" value={this.state.name} onChange={(e) => {this.handleInputChange("name", e)}} name="name" id="exampleName" placeholder="with a placeholder" />
+          <Input type="text" value={this.state.name} onChange={(e) => {this.handleInputChange("name", e)}} name="name" id="exampleName" placeholder="Name placeholder" />
         </FormGroup>
         <FormGroup>
           <Label for="examplePassword">Password</Label>
-          <Input type="password" value={this.state.password} onChange={(e) => {this.handleInputChange("password", e)}} name="password" id="examplePassword" placeholder="password placeholder" />
+          <Input type="password" value={this.state.password} onChange={(e) => {this.handleInputChange("password", e)}} name="password" id="examplePassword" placeholder="Password placeholder" />
         </FormGroup>
-        <FormGroup check>
-           <Label check>
-             <Input type="checkbox" />{' '}
-             Check me out
-           </Label>
-        </FormGroup>
+       
          <br/>
           <Button onClick={(e) => this.handleClick(e)}>Signup</Button>
         </Form>

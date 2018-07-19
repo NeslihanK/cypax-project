@@ -40,19 +40,14 @@ class Login extends Component {
          <h2>Login</h2> 
         <FormGroup>
           <Label for="exampleEmail">Email</Label>
-          <Input type="email" value={this.state.email} onChange={(e) => {this.handleInputChange("email", e)}} name="email" id="exampleEmail" placeholder="with a placeholder" />
+          <Input className="mx-auto" type="email" value={this.state.email} onChange={(e) => {this.handleInputChange("email", e)}} name="email" id="exampleEmail" placeholder="with a placeholder" />
         </FormGroup>
         <FormGroup>
           <Label for="examplePassword">Password</Label>
-          <Input type="password" value={this.state.password} onChange={(e) => {this.handleInputChange("password", e)}} name="password" id="examplePassword" placeholder="password placeholder" />
+          <Input className="mx-auto" type="password" value={this.state.password} onChange={(e) => {this.handleInputChange("password", e)}} name="password" id="examplePassword" placeholder="password placeholder" />
         </FormGroup>
        
-        <FormGroup check>
-          <Label check>
-            <Input type="checkbox" />{' '}
-            Check me out
-          </Label>
-        </FormGroup>
+     
         <br/>
         <Button onClick={(e) => this.handleClick(e)}>Submit</Button>
       </Form>

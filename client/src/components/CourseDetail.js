@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import api from '../api';
-import { Container, Col, Row, CardLink, Card, CardImg, CardText, CardBody,
+import { CardLink, Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle, Button } from 'reactstrap';
 
 import { Link } from 'react-router-dom';
@@ -30,14 +30,12 @@ handleClick(){
 }
   render() {                
     return  this.state.course && (
-      <div className="CourseDetail">
-      <Container>
-                <Row>
-            
-                  <Col col-sm-3 xs="6">
-
+      <div className="CourseDetails">
+          <div className="container">
+            <div className="row">
+     <div className="mx-auto">
       <Card>
-        <CardImg top width="100%" src={this.state.course.image} />
+        <CardImg src={this.state.course.image} />
         <CardBody>
           <CardTitle>{this.state.course.courseName}</CardTitle>
           <CardSubtitle>{this.state.course.category}</CardSubtitle>
@@ -46,20 +44,25 @@ handleClick(){
           <CardText>rating: {this.state.course.rating}</CardText>
           <Button><CardLink href={this.state.course.link} target="_blank" >Link</CardLink></Button>
 
-
-
         </CardBody>
+
       </Card>
-      
+      </div>
+      </div>
+      </div>
+        
       
         <Link to={`/category/${this.state.course.category}`}>
-          <button>Back to List</button>
+          <button className="btn btn-primary">Back to List</button>
         </Link>
-        {api.isLoggedIn() && <button onClick={this.handleClick.bind(this)} >Add to favorites</button>}
-        </Col>
-             </Row>
-            </Container>
+        {api.isLoggedIn() && <button className="btn btn-primary" onClick={this.handleClick.bind(this)} >Add to favorites</button>}
+       
+      <br/>
+      <br/>
+      <br/>
+      <br/>
       </div>
+      
     );
   }
 }
