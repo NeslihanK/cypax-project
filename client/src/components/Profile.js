@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import CourseCard from './CourseCard';
 // import {Link} from 'react-router-dom';
 import api from '../api';
-import { CardImg, CardLink, Button, Card, CardText, CardBody,
+import { Container, Col, Row, CardImg, CardLink, Button, Card, CardText, CardBody,
   CardTitle } from 'reactstrap';
 import { log } from 'util';
 // import './Secret.css';
@@ -51,21 +51,26 @@ class Profile extends Component {
           console.log(element)
           return (
             <div>
-
-             <Card>
-               <CardBody>
+              <Container>
+                <Row>
+            
+                  <Col col-sm-3 xs="6">
+                  <Card>
+                  <CardBody>
                   <CourseCard key={element._id}/>
 
                   <CardTitle>Coursename: {element.courseName}</CardTitle>                 
-                   <CardImg src={element.image}/>
+                   <CardImg  src={element.image}/>
                  
                   <CardText>Price: {element.price}</CardText>
                   <Button><CardLink href={element.link} target="_blank" >Link</CardLink></Button>
 
                   <Button onClick={() => {this.handleClick(element._id)}} >Delete</Button>
-               </CardBody>
+                  </CardBody>
              </Card>
-
+             </Col>
+             </Row>
+            </Container>
             </div>
             )
         })}

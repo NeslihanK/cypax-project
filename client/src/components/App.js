@@ -56,7 +56,8 @@ class App extends Component {
               </NavItem>
               <NavItem>
                 <NavLink>{api.isLoggedIn() && <Link to="/" onClick={(e) => this.handleLogoutClick(e)}>Logout</Link> }</NavLink>
-              </NavItem> <NavItem>
+              </NavItem> 
+              <NavItem>
                 <NavLink>{api.isLoggedIn() && <Link to="/profile">Profile</Link>}</NavLink>
               </NavItem>
             </Nav>
