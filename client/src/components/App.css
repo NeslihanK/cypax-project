@@ -72,15 +72,18 @@ a:hover {
 }
 
 .img-category {
-  border: 1px solid red;
-  max-height: 200px;
-  width: auto
+  border: solid 1px light-blue;
+  /* max-height: 200px; */
+  /* width: auto */
 }
 
 .Home {
+  background-image: radial-gradient( circle 592px at 48.2% 50%,  rgba(255,255,249,0.6) 0%, rgba(160,199,254,1) 74.6% );
+  height: 95vh;
+
   display: inline-flex;
   flex-wrap: wrap;
-  justify-content: center
+  /* justify-content: center */
 }
 
 .Profile > .container {
