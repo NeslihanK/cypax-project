@@ -126,7 +126,7 @@ Platform.deleteMany()
             rating: "6",
         },
         {
-            courseName: "Intro to HTML & CSS",22
+            courseName: "Intro to HTML & CSS",
             image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/udacity.png",
             category: "CSS",
             _platform: platforms[0]._id,
