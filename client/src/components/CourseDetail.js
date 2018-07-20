@@ -41,7 +41,7 @@ handleClick(){
           <div className="container">
             <div className="row">
       <div className="mx-auto">
-      <Card>
+      <Card className="detail">
         
         <CardImg src={this.state.course.image} />
         <CardBody>
