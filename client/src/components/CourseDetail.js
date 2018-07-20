@@ -42,13 +42,13 @@ handleClick(){
             <div className="row">
       <div className="mx-auto">
       <Card>
+        
         <CardImg src={this.state.course.image} />
         <CardBody>
           <CardTitle>{this.state.course.courseName}</CardTitle>
-          <CardSubtitle>{this.state.course.category}</CardSubtitle>
+          <CardSubtitle>Category: {this.state.course.category}</CardSubtitle>
           <CardText>platform: {this.state.course._platform.platformName}</CardText>
           <CardText>price: {this.state.course.price}</CardText>
-          {/* <CardText>rating: {this.state.course.rating}</CardText> */}
           <Button><CardLink href={this.state.course.link} target="_blank" >Link</CardLink></Button>
 
         </CardBody>

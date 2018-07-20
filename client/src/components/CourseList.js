@@ -48,7 +48,7 @@ class CourseList extends Component {
                     <CardBody>
                       <CourseCard key={element._id}/>
 
-                      <CardTitle>Coursename: {element.courseName}</CardTitle>                 
+                      <CardTitle>{element.courseName}</CardTitle>                 
                       <CardImg  src={element.image}/>
                   
                       <CardText>Price: {element.price}</CardText>

@@ -47,7 +47,7 @@ const platforms = [
     {
         platformName: "edX",
         link: "https://www.edx.org/",
-        image: "https://cdn-blog.lawrencemcdaniel.com/wp-content/uploads/2018/02/22125436/open-edx-banner.jpg",
+        image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/edx.png",
     },
     {
         platformName: "Lynda.com",
@@ -57,12 +57,12 @@ const platforms = [
     {
         platformName: "freeCodeCamp",
         link: "https://www.freecodecamp.org/",
-        image: "https://secure.meetupstatic.com/photos/event/4/c/b/b/600_468259643.jpeg",
+        image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067484/cypax/freecodecamp.png",
     },
     {
         platformName: "w3schools",
         link: "https://www.w3schools.com/",
-        image: "http://www.intertech.com/Blog/wp-content/uploads/2015/07/w3schools-logo-1.png",
+        image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/w3school.png",
     },
     {
         platformName: "MDN web docs",
@@ -118,7 +118,7 @@ Platform.deleteMany()
          // Udacity Courses
         {
             courseName: "Intro to Javascript",
-            image: "https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/2017/10/udacity-logo.png",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/udacity.png",
             category: "JS",
             _platform: platforms[0]._id,
             link: "https://de.udacity.com/course/intro-to-javascript--ud803",
@@ -126,8 +126,8 @@ Platform.deleteMany()
             rating: "6",
         },
         {
-            courseName: "Intro to HTML & CSS",
-            image: "https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/2017/10/udacity-logo.png",
+            courseName: "Intro to HTML & CSS",22
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/udacity.png",
             category: "CSS",
             _platform: platforms[0]._id,
             link: "https://de.udacity.com/course/intro-to-html-and-css--ud304",
@@ -136,7 +136,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Intro to Python",
-            image: "https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/2017/10/udacity-logo.png",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/udacity.png",
             category: "PYTHON",
             _platform: platforms[0]._id,
             link: "https://de.udacity.com/course/introduction-to-python--ud1110",
@@ -145,7 +145,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Java Programming Basics",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/udacity.png",
             category: "JAVA",
             _platform: platforms[0]._id,
             link: "https://de.udacity.com/course/java-programming-basics--ud282",
@@ -154,7 +154,7 @@ Platform.deleteMany()
         },
         {
             courseName: "C++ for Programmers",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/udacity.png",
             category: "C++",
             _platform: platforms[0]._id,
             link: "https://de.udacity.com/course/c-for-programmers--ud210",
@@ -165,7 +165,7 @@ Platform.deleteMany()
         // Udemy Courses
         {
             courseName: "Javascript for beginners",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067596/cypax/udemy.png",
             category: "JS",
             _platform: platforms[1]._id,
             link: "https://www.udemy.com/learn-javascript-fundamentals/",
@@ -174,7 +174,7 @@ Platform.deleteMany()
         },
         {
             courseName: "CSS - The Complete Guide (incl. Flexbox, Grid & Sass)",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067596/cypax/udemy.png",
             category: "CSS",
             _platform: platforms[1]._id,
             link: "https://www.udemy.com/css-the-complete-guide-incl-flexbox-grid-sass/",
@@ -183,7 +183,7 @@ Platform.deleteMany()
         },
         {
             courseName: "The Complete Python Course | Learn Python by Doing",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067596/cypax/udemy.png",
             category: "PYTHON",
             _platform: platforms[1]._id,
             link: "https://www.udemy.com/the-complete-python-course/",
@@ -192,7 +192,7 @@ Platform.deleteMany()
         },
         {
             courseName: "PHP for Beginners",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067596/cypax/udemy.png",
             category: "PHP",
             _platform: platforms[1]._id,
             link: "https://www.udemy.com/php-for-beginners-/",
@@ -201,7 +201,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Complete Java Masterclass - updated for Java 10",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067596/cypax/udemy.png",
             category: "JAVA",
             _platform: platforms[1]._id,
             link: "https://www.udemy.com/java-the-complete-java-developer-course/",
@@ -210,7 +210,7 @@ Platform.deleteMany()
         },
         {
             courseName: "C++: From Beginner to Expert",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067596/cypax/udemy.png",
             category: "C++",
             _platform: platforms[1]._id,
             link: "https://www.udemy.com/video-course-c-from-beginner-to-expert/",
@@ -221,7 +221,7 @@ Platform.deleteMany()
         // KhanAcademy Courses
         {
             courseName: "Intro to JS: Drawing & Animation",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/khanacademy.png",
             category: "JS",
             _platform: platforms[2]._id,
             link: "https://www.khanacademy.org/computing/computer-programming/programming",
@@ -230,7 +230,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Intro to HTML/CSS: Making webpages",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/khanacademy.png",
             category: "CSS",
             _platform: platforms[2]._id,
             link: "https://www.khanacademy.org/computing/computer-programming/html-css",
@@ -241,7 +241,7 @@ Platform.deleteMany()
         // Scrimba Courses
         {
             courseName: "Introduction to Javascript",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/scrimba.png",
             category: "JS",
             _platform: platforms[3]._id,
             link: "https://scrimba.com/g/gintrotojavascript",
@@ -250,7 +250,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Introduction to CSS",
-            image: "aaaa",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/scrimba.png",
             category: "CSS",
             _platform: platforms[3]._id,
             link: "https://scrimba.com/g/gintrotocss",
@@ -261,7 +261,7 @@ Platform.deleteMany()
         // CodeCademy Courses
         {
             courseName: "Javascript",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067610/cypax/codecademy.png",
             category: "JS",
             _platform: platforms[4]._id,
             link: "https://www.codecademy.com/catalog/language/javascript",
@@ -270,7 +270,7 @@ Platform.deleteMany()
         },
         {
             courseName: "HTML & CSS",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067610/cypax/codecademy.png",
             category: "CSS",
             _platform: platforms[4]._id,
             link: "https://www.codecademy.com/catalog/language/html-css",
@@ -279,7 +279,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Python",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067610/cypax/codecademy.png",
             category: "PYTHON",
             _platform: platforms[4]._id,
             link: "https://www.codecademy.com/catalog/language/python",
@@ -288,7 +288,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Java",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067610/cypax/codecademy.png",
             category: "JAVA",
             _platform: platforms[4]._id,
             link: "https://www.codecademy.com/catalog/language/java",
@@ -296,7 +296,7 @@ Platform.deleteMany()
             rating: "10",
         },
 
-        // CodeCademy Courses
+        // Coursera Courses
         // {
         //     courseName: "Javascript",
         //     image: "",
@@ -310,7 +310,7 @@ Platform.deleteMany()
         // edX Courses
         {
             courseName: "JavaScript Introduction",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/edx.png",
             category: "JS",
             _platform: platforms[6]._id,
             link: "https://www.edx.org/course/javascript-introduction-w3cx-js-0x-0",
@@ -319,7 +319,7 @@ Platform.deleteMany()
         },
         {
             courseName: "HTML5 and CSS Fundamentals",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/edx.png",
             category: "CSS",
             _platform: platforms[6]._id,
             link: "https://www.edx.org/course/html5-and-css-fundamentals",
@@ -328,7 +328,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Introduction to Python: Absolute Beginner",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/edx.png",
             category: "PYTHON",
             _platform: platforms[6]._id,
             link: "https://www.edx.org/course/introduction-to-python-absolute-beginner-0",
@@ -337,7 +337,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Learn to Programm in Java",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/edx.png",
             category: "JAVA",
             _platform: platforms[6]._id,
             link: "https://www.edx.org/course/learn-to-program-in-java-0",
@@ -346,7 +346,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Introduction to C++",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/edx.png",
             category: "C++",
             _platform: platforms[6]._id,
             link: "https://www.edx.org/course/introduction-to-c-0",
@@ -357,7 +357,7 @@ Platform.deleteMany()
         // Lynda Courses
         {
             courseName: "Learning the Javascript Language",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067484/cypax/lynda.png",
             category: "JS",
             _platform: platforms[7]._id,
             link: "https://www.lynda.com/JavaScript-tutorials/Introducing-JavaScript-Language/123563-2.html",
@@ -366,7 +366,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Learning CSS",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067484/cypax/lynda.png",
             category: "CSS",
             _platform: platforms[7]._id,
             link: "https://www.lynda.com/CSS-tutorials/CSS-Fundamentals/417645-2.html?srchtrk=index%3a22%0alinktypeid%3a2%0aq%3aCSS%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2",
@@ -375,7 +375,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Learning Python",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067484/cypax/lynda.png",
             category: "PYTHON",
             _platform: platforms[7]._id,
             link: "https://www.lynda.com/Python-tutorials/Learning-Python/661773-2.html?srchtrk=index%3a1%0alinktypeid%3a2%0aq%3aPython%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2",
@@ -384,7 +384,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Learning PHP",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067484/cypax/lynda.png",
             category: "PHP",
             _platform: platforms[7]._id,
             link: "https://www.lynda.com/PHP-tutorials/Introducing-PHP/418256-2.html?srchtrk=index%3a4%0alinktypeid%3a2%0aq%3aPHP%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2",
@@ -393,7 +393,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Learning Java",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067484/cypax/lynda.png",
             category: "JAVA",
             _platform: platforms[7]._id,
             link: "https://www.lynda.com/Java-tutorials/Learning-Java-2018/669544-2.html?srchtrk=index%3a1%0alinktypeid%3a2%0aq%3aJava%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2",
@@ -402,7 +402,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Learning C++",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067484/cypax/lynda.png",
             category: "C++",
             _platform: platforms[7]._id,
             link: "https://www.lynda.com/C-tutorials/Up-Running-C/167922-2.html?srchtrk=index%3a5%0alinktypeid%3a2%0aq%3ac%2b%2b%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2",
@@ -414,7 +414,7 @@ Platform.deleteMany()
       
         {
             courseName: "Javascript Algorithms And Data Structures Certification",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067484/cypax/freecodecamp.png",
             category: "JS",
             _platform: platforms[8]._id,
             link: "https://learn.freecodecamp.org/",
@@ -423,7 +423,7 @@ Platform.deleteMany()
         },
         {
             courseName: "HTML & CSS",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067484/cypax/freecodecamp.png",
             category: "CSS",
             _platform: platforms[8]._id,
             link: "https://learn.freecodecamp.org/",
@@ -435,7 +435,7 @@ Platform.deleteMany()
 
         {
             courseName: "Learn Javascript",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/w3school.png",
             category: "JS",
             _platform: platforms[9]._id,
             link: "https://www.w3schools.com/js/default.asp",
@@ -444,7 +444,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Learn CSS",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/w3school.png",
             category: "CSS",
             _platform: platforms[9]._id,
             link: "https://www.w3schools.com/css/default.asp",
@@ -453,7 +453,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Learn PHP",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/w3school.png",
             category: "PHP",
             _platform: platforms[9]._id,
             link: "https://www.w3schools.com/php/default.asp",
@@ -465,7 +465,7 @@ Platform.deleteMany()
 
         {
             courseName: "JavaScript",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/mdn.png",
             category: "JS",
             _platform: platforms[10]._id,
             link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
@@ -474,7 +474,7 @@ Platform.deleteMany()
         },
         {
             courseName: "CSS",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/mdn.png",
             category: "CSS",
             _platform: platforms[10]._id,
             link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
@@ -483,7 +483,7 @@ Platform.deleteMany()
         },
         {
             courseName: "CSS",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/mdn.png",
             category: "CSS",
             _platform: platforms[10]._id,
             link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
@@ -494,7 +494,7 @@ Platform.deleteMany()
         // YouTube 
         {
             courseName: "JavaScript Tutorial for Beginners",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/youtube.png",
             category: "JS",
             _platform: platforms[12]._id,
             link: "https://www.youtube.com/watch?v=W6NZfCO5SIk",
@@ -503,7 +503,7 @@ Platform.deleteMany()
         },
         {
             courseName: "JavaScript Tutorial for Absolute Beginners",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/youtube.png",
             category: "JS",
             _platform: platforms[12]._id,
             link: "https://www.youtube.com/watch?v=XL9Ri8pO68w",
@@ -512,7 +512,7 @@ Platform.deleteMany()
         },
         {
             courseName: "JavaScript Video Tutorial Pt 1",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/youtube.png",
             category: "JS",
             _platform: platforms[12]._id,
             link: "hhttps://www.youtube.com/watch?v=_cLvpJY2deo",
@@ -521,7 +521,7 @@ Platform.deleteMany()
         },
         {
             courseName: "HTML & CSS Tutorial for Beginners",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/youtube.png",
             category: "CSS",
             _platform: platforms[12]._id,
             link: "https://www.youtube.com/watch?v=y3UH2gAhwPI",
@@ -530,7 +530,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Python Programming",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/youtube.png",
             category: "PYTHON",
             _platform: platforms[12]._id,
             link: "https://www.youtube.com/watch?v=N4mEzFDjqtA",
@@ -539,7 +539,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Python Tutorial for Absolute Beginners",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/youtube.png",
             category: "PYTHON",
             _platform: platforms[12]._id,
             link: "https://www.youtube.com/watch?v=Z1Yd7upQsXY",
@@ -548,7 +548,7 @@ Platform.deleteMany()
         },
         {
             courseName: "PHP Programming",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/youtube.png",
             category: "PHP",
             _platform: platforms[12]._id,
             link: "https://www.youtube.com/watch?v=7TF00hJI78Y",
@@ -557,7 +557,7 @@ Platform.deleteMany()
         },
         {
             courseName: "How to learn PHP and MySQL with Practical full Project",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/youtube.png",
             category: "PHP",
             _platform: platforms[12]._id,
             link: "https://www.youtube.com/watch?v=NMSlQjm2row",
@@ -566,7 +566,7 @@ Platform.deleteMany()
         },
         {
             courseName: "1: Introduction to PHP Programming",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/youtube.png",
             category: "PHP",
             _platform: platforms[12]._id,
             link: "https://www.youtube.com/watch?v=qVU3V0A05k8",
@@ -575,7 +575,7 @@ Platform.deleteMany()
         },
         {
             courseName: "PHP for Beginners",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/youtube.png",
             category: "PHP",
             _platform: platforms[12]._id,
             link: "https://www.youtube.com/watch?v=0hOMA_-jnpI",
@@ -584,7 +584,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Java Tutorial for Beginners",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/youtube.png",
             category: "JAVA",
             _platform: platforms[12]._id,
             link: "https://www.youtube.com/watch?v=3u1fu6f8Hto",
@@ -593,7 +593,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Complete Core Java Programming ",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/youtube.png",
             category: "JAVA",
             _platform: platforms[12]._id,
             link: "https://www.youtube.com/watch?v=R08YRplsYGw",
@@ -602,7 +602,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Learn Java Simply Full",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/youtube.png",
             category: "JAVA",
             _platform: platforms[12]._id,
             link: "https://www.youtube.com/watch?v=jWTjHmuuvJs",
@@ -611,7 +611,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Learn Java Programming For Beginners",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/youtube.png",
             category: "JAVA",
             _platform: platforms[12]._id,
             link: "https://www.youtube.com/watch?v=00RxteR1oGQ",
@@ -620,7 +620,7 @@ Platform.deleteMany()
         },
         {
             courseName: "C++ Programming",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/youtube.png",
             category: "C++",
             _platform: platforms[12]._id,
             link: "https://www.youtube.com/watch?v=Rub-JsjMhWY",
@@ -629,7 +629,7 @@ Platform.deleteMany()
         },
         {
             courseName: "C++ Tutorials From Basic to Advance",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/youtube.png",
             category: "C++",
             _platform: platforms[12]._id,
             link: "https://www.youtube.com/watch?v=mUQZ1qmKlLY",
@@ -638,7 +638,7 @@ Platform.deleteMany()
         },
         {
             courseName: "C++ Beginners Tutorial 1",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/youtube.png",
             category: "C++",
             _platform: platforms[12]._id,
             link: "https://www.youtube.com/watch?v=ki3B8a-jLrE",
@@ -650,7 +650,7 @@ Platform.deleteMany()
 
         {
             courseName: "The Complete Javascript Course",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067610/cypax/eduonix.png",
             category: "JS",
             _platform: platforms[13]._id,
             link: "https://www.eduonix.com/the-complete-javascript-course-build-a-professional-project",
@@ -659,7 +659,7 @@ Platform.deleteMany()
         },
         {
             courseName: "JavaScript Course",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067610/cypax/eduonix.png",
             category: "JS",
             _platform: platforms[13]._id,
             link: "https://www.eduonix.com/the-ultimate-javascript-course-build-real-world-apps2018",
@@ -668,7 +668,7 @@ Platform.deleteMany()
         },
         {
             courseName: "CSS - The Complete Guide (incl. Flexbox, Grid & Sass)",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067610/cypax/eduonix.png",
             category: "CSS",
             _platform: platforms[13]._id,
             link: "https://www.eduonix.com/css-the-complete-guide-incl-flexbox-grid-sass",
@@ -677,7 +677,7 @@ Platform.deleteMany()
         },
         {
             courseName: "HTML5 And CSS3 Build Modern Responsive Websites",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067610/cypax/eduonix.png",
             category: "CSS",
             _platform: platforms[13]._id,
             link: "https://www.eduonix.com/html5-and-css3-build-modern-responsive-websites",
@@ -686,7 +686,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Python Programming Learn Python with 100+ Practicals",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067610/cypax/eduonix.png",
             category: "PYTHON",
             _platform: platforms[13]._id,
             link: "https://www.eduonix.com/python-programming--learn-python-with-100plus-practicals",
@@ -695,7 +695,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Learn Python programming From Scratch",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067610/cypax/eduonix.png",
             category: "PYTHON",
             _platform: platforms[13]._id,
             link: "https://www.eduonix.com/courses/Software-Development/Learn-Python-programming-From-Scratch",
@@ -704,7 +704,7 @@ Platform.deleteMany()
         },
         {
             courseName: "PHP CodeIgniter for Absolute Beginners",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067610/cypax/eduonix.png",
             category: "PHP",
             _platform: platforms[13]._id,
             link: "https://www.eduonix.com/php-codeigniter-for-absolute-beginners",
@@ -713,7 +713,7 @@ Platform.deleteMany()
         },
         {
             courseName: "PHP Programming For Web Development",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067610/cypax/eduonix.png",
             category: "PHP",
             _platform: platforms[13]._id,
             link: "https://www.eduonix.com/php-programming-for-web-development",
@@ -722,7 +722,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Java for beginners Step-by-step handson guide to Java",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067610/cypax/eduonix.png",
             category: "JAVA",
             _platform: platforms[13]._id,
             link: "https://www.eduonix.com/java-for-beginners-stepbystep-handson-guide-to-java",
@@ -731,7 +731,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Complete Java 9 Masterclass- Beginner to Expert",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067610/cypax/eduonix.png",
             category: "JAVA",
             _platform: platforms[13]._id,
             link: "https://www.eduonix.com/complete-java-9-masterclass-beginner-to-expert",
@@ -743,7 +743,7 @@ Platform.deleteMany()
 
         {
             courseName: "Javascript Tutorial",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/tutorliaspoint.png",
             category: "JS",
             _platform: platforms[14]._id,
             link: "https://www.tutorialspoint.com/javascript/index.htm",
@@ -752,7 +752,7 @@ Platform.deleteMany()
         },
         {
             courseName: "CSS Tutorial",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/tutorliaspoint.png",
             category: "CSS",
             _platform: platforms[14]._id,
             link: "https://www.tutorialspoint.com/css/index.htm",
@@ -761,7 +761,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Python Tutorial",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/tutorliaspoint.png",
             category: "PYTHON",
             _platform: platforms[14]._id,
             link: "https://www.tutorialspoint.com/python/index.htm",
@@ -770,7 +770,7 @@ Platform.deleteMany()
         },
         {
             courseName: "PHP Tutorial",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/tutorliaspoint.png",
             category: "PHP",
             _platform: platforms[14]._id,
             link: "https://www.tutorialspoint.com/php/index.htm",
@@ -779,7 +779,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Java Tutorial",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/tutorliaspoint.png",
             category: "JAVA",
             _platform: platforms[14]._id,
             link: "https://www.tutorialspoint.com/java/index.htm",
@@ -788,7 +788,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Java Tutorial",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/tutorliaspoint.png",
             category: "C++",
             _platform: platforms[14]._id,
             link: "https://www.tutorialspoint.com/cplusplus/index.htm",
@@ -800,7 +800,7 @@ Platform.deleteMany()
 
         {
             courseName: "Learn to code with Javascript",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/openclassroom.png",
             category: "JS",
             _platform: platforms[16]._id,
             link: "https://openclassrooms.com/en/courses/3523231-learn-to-code-with-javascript",
@@ -809,7 +809,7 @@ Platform.deleteMany()
         },
         {
             courseName: "Learn HTML & CSS",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/openclassroom.png",
             category: "CSS",
             _platform: platforms[16]._id,
             link: "https://openclassrooms.com/en/courses/5265446-build-your-first-web-pages-with-html-and-css",
@@ -821,7 +821,7 @@ Platform.deleteMany()
 
         {
             courseName: "Javascript Tutorial",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/levelup.png",
             category: "JS",
             _platform: platforms[17]._id,
             link: "https://www.leveluptutorials.com/tutorials/javascript-tutorials",
@@ -830,7 +830,7 @@ Platform.deleteMany()
         },
         {
             courseName: "CSS Tutorial",
-            image: "",
+            image: "https://res.cloudinary.com/dyjgppdq0/image/upload/v1532067611/cypax/levelup.png",
             category: "CSS",
             _platform: platforms[17]._id,
             link: "https://www.leveluptutorials.com/tutorials/css-tutorials",
